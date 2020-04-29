@@ -1,0 +1,21 @@
+
+{% extends "base.html" %}
+
+{% block content%}
+<div style="margin-top: 70px;">
+	<h2>Add a category</h2>
+
+<form action="" method="post">
+{% csrf_token %}
+<p name="chei" class="form-control">
+	{{ form.name}} 
+</p>
+
+
+
+<input type="submit" value="Submit" />
+</form>
+</div>
+
+
+{% endblock content%}
